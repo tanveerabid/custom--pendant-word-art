@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Custom Engraving on Necklace</title>
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+	<!-- For styling-->
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="row2"> 
+	<form method="post" id="test_form">
+	<label>Write discription to display</label>
+	<br>
+	<br>
+	<label>First Ring Text</label>
+	<input type="text" id="t1" />
+	<br>
+	<label>First Ring Text</label>
+	<input type="text" id="t2" />
+	<br>
+	<label>First Ring Text</label>
+	<input type="text" id="t3" />
+	<br>
+	<label>First Ring Text</label>
+	<input type="text" id="t4" />
+	<br>
+	<br>
+	<input type="submit" onclick="showInput();"><br/>
+	</form>
+	</div>
+
+        <div id="row1">
+	
+      <svg viewBox="0 0 400 400" style="margin-top: 120px;">
+	  <!-- Fisrt ring text path-->
+  <path id="curve1" fill="transparent" />
+
+  
+  <!-- Fisrt  ring text path Q60,200 end-->
+  
+  <!-- 2nd  ring path start-->
+  
+   <path id="curve2" fill="transparent" />
+   <!-- 2nd ring text path end-->
+   
+   <!-- 3rd ring text path start-->
+   <path id="curve3" fill="transparent" />
+    <!-- 3rd ring text path end-->
+	   
+	<!-- 4th ring text path start-->
+	<path id="curve4" fill="transparent" />
+	 
+	<!-- 4th ring text path C450,-8 18,18end-->
+	 
+  <text id="displaytext" width="200px">
+    <textPath id="text1" xlink:href="#curve1">
+    TANVEER
+    </textPath>
+  </text>
+    <text id="displaytext" width="200px">
+    <textPath id="text2" xlink:href="#curve2">
+   ABID
+    </textPath>
+  </text>
+    <text id="displaytext" width="200px">
+    <textPath id="text3" xlink:href="#curve3">
+  WEB
+    </textPath>
+  </text>
+    <text id="displaytext" width="200px">
+    <textPath id="text4" xlink:href="#curve4">
+DEVELOPER
+    </textPath>
+  </text>
+</svg>
+
+      
+    </div>
+	
+</div>
+<!-- Receiving values from form and sending back to the output-->
+  <script language="JavaScript">
+    function showInput() {
+	  event.preventDefault();
+document.getElementById('text1').innerHTML = document.getElementById("t1").value;
+document.getElementById('text2').innerHTML = document.getElementById("t2").value;
+document.getElementById('text3').innerHTML = document.getElementById("t3").value;
+document.getElementById('text4').innerHTML = document.getElementById("t4").value;
+
+    }
+  </script>
+  
+  <!-- stoping form from resubmitting on page refresh-->
+  <script>
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+</script>
+</body>
+</html>

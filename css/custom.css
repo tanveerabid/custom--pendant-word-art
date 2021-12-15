@@ -1,0 +1,128 @@
+*{
+    font-family: arial;
+    }
+    #wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    }
+    
+    #row1{
+        background-image: url('../images/test.png'); 
+        background-position: center center; 
+        width: 50%;
+    }
+    #row2{
+        width: 50%;
+    }
+    
+    #displaytext{
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    }
+    #curve1 {
+      d: path("M65,168 Q46,235 98,285");
+    }
+    
+    #curve2 {
+      d: path("M116,190 Q109,255 180,297");
+    }
+    
+    #curve3 {
+      d: path("M295,210 Q335,118 267,70");
+    }
+    
+    #curve4 {
+      d: path("M326,243 Q384,208  350,90");
+    }
+    
+    
+    
+    
+    @media only screen 
+    and (min-device-width : 450px) and (max-device-width : 720px) {
+    #wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    #row1{
+        background-image: url('../images/test.png'); 
+        background-position: center center; 
+        width: 100%;
+    }
+    #row2{
+        width: 100%;
+    }
+    
+    #displaytext{
+    font-size: 10;
+    letter-spacing: 3px;
+    text-align: center;
+    }
+      #curve1 {
+      d: path("M84,190 Q70,240 139,290");
+    }
+    
+    #curve2 {
+      d: path("M130,190 Q115,240 190,290");
+    }
+    
+    #curve3 {
+      d: path("M256,233 Q350,130 192,50");
+    }
+    
+    #curve4 {
+      d: path("M263,257 Q347,236  336,130");
+    }
+    }
+    
+    
+    @media only screen 
+    and (min-device-width : 1280px) and (max-device-width : 1366px) {
+    
+    #displaytext{
+    font-size: 20;
+    letter-spacing: 3px;
+    text-align: center;
+    }
+      #curve1 {
+      d: path("M84,190 Q70,240 139,290");
+    }
+    
+    #curve2 {
+      d: path("M130,190 Q115,240 190,290");
+    }
+    
+    #curve3 {
+      d: path("M256,233 Q350,130 192,50");
+    }
+    
+    #curve4 {
+      d: path("M263,257 Q347,236  342,130");
+    }
+    }
+    
+    @media only screen and (min-device-width : 1500px) and (max-device-width : 1920px) {
+    #displaytext{
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-align: center;
+    }
+    #curve1 {
+      d: path("M116,188 Q102,235 165,267");
+    }
+    
+    #curve2 {
+      d: path("M150,190 Q138,255 240,270");
+    }
+    
+    #curve3 {
+      d: path("M253,210 Q318,105 70,70");
+    }
+    
+    #curve4 {
+      d: path("M238,243 Q337,214  278,126");
+    }
+    }
